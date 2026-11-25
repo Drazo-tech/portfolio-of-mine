@@ -1,0 +1,433 @@
+
+/* =========================================
+   GENERAL PAGE STYLING
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0b1020;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+h1, h2, h3, nav a {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+p {
+    font-weight: 400;
+}
+
+/* =========================================
+   HEADER STYLING
+========================================= */
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1e1b4b, #0b1020);
+}
+
+header h1 {
+    font-size: 40px;
+    color: #8b5cf6;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #06b6d4;
+}
+
+/* =========================================
+   NAVIGATION STYLING
+========================================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+    background-color: #111827;
+    border-bottom: 1px solid #273449;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a:focus,
+nav a[aria-current="page"] {
+    color: #06b6d4;
+}
+
+/* =========================================
+   MAIN CONTENT AND SECTIONS
+========================================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    background-color: #111827;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #273449;
+}
+
+section h2 {
+    color: #8b5cf6;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #06b6d4;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #cbd5e1;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   PROFILE PHOTOGRAPH
+========================================= */
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #8b5cf6;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+    display: block;
+    margin: 20px auto;
+}
+
+/* =========================================
+   SKILLS STYLING
+========================================= */
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+#skills li {
+    background-color: #1e1b4b;
+    color: #06b6d4;
+    padding: 10px 18px;
+    border-radius: 25px;
+    border: 1px solid #8b5cf6;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+#skills li:hover {
+    background-color: #8b5cf6;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   PROJECT CARD STYLING
+========================================= */
+
+.project {
+    background: linear-gradient(135deg, #1e1b4b, #172554);
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid #8b5cf6;
+    transition: 0.3s;
+}
+
+.project h3 {
+    color: #06b6d4;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #cbd5e1;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    border-color: #06b6d4;
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.2);
+}
+
+/* =========================================
+   HOBBIES PAGE STYLING
+========================================= */
+
+.hobby-card {
+    background: linear-gradient(135deg, #1e1b4b, #172554);
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid #8b5cf6;
+    transition: 0.3s;
+}
+
+.hobby-card h3 {
+    color: #06b6d4;
+    margin-bottom: 10px;
+}
+
+.hobby-card p {
+    color: #cbd5e1;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+    border-color: #06b6d4;
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.2);
+}
+
+/* =========================================
+   ACADEMIC PAGE STYLING
+========================================= */
+
+.education-card {
+    background-color: #172554;
+    padding: 25px;
+    margin-top: 20px;
+    border-left: 4px solid #8b5cf6;
+    border-radius: 10px;
+}
+
+.education-card h3 {
+    color: #06b6d4;
+    margin-bottom: 12px;
+}
+
+.education-card p {
+    color: #cbd5e1;
+}
+
+/* =========================================
+   CONTACT PAGE STYLING
+========================================= */
+
+.contact-card {
+    background: linear-gradient(135deg, #1e1b4b, #172554);
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid #06b6d4;
+    text-align: center;
+}
+
+.contact-card h3 {
+    color: #8b5cf6;
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: #cbd5e1;
+}
+
+.contact-card a {
+    color: #06b6d4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    color: #8b5cf6;
+}
+
+/* =========================================
+   MOVIES AND SERIES PAGE STYLING
+========================================= */
+
+.movie-card {
+    background: linear-gradient(135deg, #1e1b4b, #172554);
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid #8b5cf6;
+    transition: 0.3s;
+}
+
+.movie-card h3 {
+    color: #06b6d4;
+    margin-bottom: 10px;
+}
+
+.movie-card p {
+    color: #cbd5e1;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    border-color: #06b6d4;
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.2);
+}
+
+/* =========================================
+   GENERAL CONTENT LINKS
+========================================= */
+
+section a {
+    color: #06b6d4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    color: #8b5cf6;
+    text-decoration: underline;
+}
+
+.content-link {
+    display: inline-block;
+    background-color: #1e1b4b;
+    color: #06b6d4;
+    padding: 10px 18px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #8b5cf6;
+    transition: 0.3s;
+}
+
+.content-link:hover {
+    background-color: #8b5cf6;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* =========================================
+   HOMEPAGE LINK CARDS
+========================================= */
+
+.link-card {
+    background: linear-gradient(135deg, #1e1b4b, #172554);
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid #8b5cf6;
+}
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+#contact {
+    text-align: center;
+    border: 1px solid #06b6d4;
+}
+
+#contact p {
+    color: #06b6d4;
+    font-size: 17px;
+}
+
+/* =========================================
+   FOOTER STYLING
+========================================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #111827;
+    color: #aab4c8;
+    font-size: 14px;
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 55px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 20px 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    #skills ul {
+        gap: 10px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .project,
+    .hobby-card,
+    .education-card,
+    .contact-card,
+    .movie-card,
+    .link-card {
+        padding: 20px;
+    }
+
+}
